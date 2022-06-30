@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WoSafe</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weblient">330769366630-phdd6vul33av2n254g24kb92pngpok5t.apps.googleusercontent.com</string>
+</resources>

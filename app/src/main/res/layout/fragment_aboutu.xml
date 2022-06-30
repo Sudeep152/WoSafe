@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moreabout" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_margin="30dp"
+
+        android:src="@drawable/ic_undraw_taking_selfie_re_wlgd__1_"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/finishBtn">
+
+        <EditText
+            android:id="@+id/nameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/purple_500"
+            android:drawableLeft="@drawable/ic_icon_ionic_ios_woman"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter Wonder Woman Name...."
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/emailEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/purple_500"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter Email Here.."
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/getCurrentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:editable="false"
+            android:backgroundTint="@color/purple_500"
+            android:drawableLeft="@drawable/ic_baseline_my_location_24"
+            android:drawablePadding="10dp"
+            android:hint="Press The Location Button"
+            android:inputType="textEmailAddress|textMultiLine"
+            android:lines="20"
+            android:minLines="3"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical" />
+
+        <EditText
+            android:id="@+id/emergencyOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/purple_500"
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter First Emergency Number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/emergencyTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/purple_500"
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Enter Second Emergency Number"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finishBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_button"
+        android:text="Finish"
+
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
